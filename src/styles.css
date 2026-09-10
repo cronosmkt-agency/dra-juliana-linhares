@@ -32,12 +32,12 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
-  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
 }
 
 :root {
-  --radius: 1rem;
+  --radius: 1.125rem;
   --background: #FAFAF9;
   --foreground: #0F172A;
   --card: #FFFFFF;
@@ -45,18 +45,18 @@
   --popover: #FFFFFF;
   --popover-foreground: #0F172A;
   --primary: #059669;
-  --primary-foreground: #ffffff;
-  --secondary: #F1F5F9;
-  --secondary-foreground: #0F172A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F0FDF4;
+  --secondary-foreground: #064E3B;
   --muted: #F1F5F9;
   --muted-foreground: #64748B;
-  --accent: #f472b6;
-  --accent-foreground: #ffffff;
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --border: rgba(15, 23, 42, 0.10);
-  --input: rgba(15, 23, 42, 0.10);
-  --ring: #f472b6;
+  --accent: #F472B6;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(15, 23, 42, 0.08);
+  --input: rgba(15, 23, 42, 0.08);
+  --ring: #10B981;
   --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
 }
@@ -65,11 +65,28 @@
   * {
     border-color: var(--border);
   }
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
+}
+
+.soft-mint-glow {
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.25);
+}
+
+.soft-pink-glow {
+  box-shadow: 0 10px 30px -10px rgba(244, 114, 182, 0.25);
+}
+
+.glass-card-pediatric {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.15);
 }
